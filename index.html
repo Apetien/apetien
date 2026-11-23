@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexandre Petien · Asesor comercial · Chinandega</title>
+<meta name="description" content="Asesor comercial en Chinandega. Cerca de 4 de cada 10 clientes atendidos terminan en venta. Busco un nuevo proyecto comercial.">
+<meta name="theme-color" content="#08090a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308090a'/%3E%3Cpath d='M9 24 16 8l7 16M12 19h8' stroke='%238b93ff' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08090a;--panel:#0e0f11;--line:#1f2125;--line2:#2c2f35;--tx:#f4f5f6;--mu:#8b8f98;--ac:#8b93ff;
+--sans:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{color-scheme:dark;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;font-feature-settings:"cv11","ss03"}
+body::before{content:"";position:fixed;inset:0 0 auto;height:520px;background:radial-gradient(60% 100% at 50% 0,rgba(139,147,255,.13),transparent 70%);pointer-events:none;z-index:-1}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:6px}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:5;backdrop-filter:blur(14px);background:rgba(8,9,10,.7);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+nav b{font-weight:600;letter-spacing:-.01em}
+nav div{display:flex;gap:22px;align-items:center;font-size:14px;color:var(--mu)}
+nav div a:hover{color:var(--tx)}
+.btn{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 16px;border-radius:9px;font:500 14px var(--sans);border:1px solid var(--line2);color:var(--tx);background:transparent;transition:background .2s,border-color .2s,transform .2s}
+.btn:hover{background:#15171a;border-color:#3a3e46;transform:translateY(-1px)}
+.btn.p{background:var(--tx);color:#0a0a0b;border-color:var(--tx)}
+.btn.p:hover{background:#fff}
+nav .btn{height:32px;font-size:13px;color:var(--tx)}
+nav .btn.p{color:#0a0a0b}
+.hero{padding:104px 0 56px}
+.hero p.who{color:var(--mu);font-size:15px;margin-bottom:20px}
+h1{font-weight:500;font-size:clamp(36px,6.4vw,64px);line-height:1.04;letter-spacing:-.035em;max-width:15ch;text-wrap:balance}
+.hero p.lead{margin-top:24px;max-width:56ch;color:#b4b8c0;font-size:18px;line-height:1.55}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--panel)}
+.m{position:relative;padding:28px 26px 26px;border-right:1px solid var(--line);isolation:isolate}
+.m:last-child{border-right:0}
+.m::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .3s;background:radial-gradient(240px circle at var(--x,50%) var(--y,50%),rgba(139,147,255,.14),transparent 70%)}
+.m:hover::before{opacity:1}
+.m strong{display:block;font-weight:500;font-size:clamp(38px,6vw,56px);letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
+.m span{display:block;margin-top:12px;color:var(--mu);font-size:14px;line-height:1.45;max-width:22ch}
+.note{margin-top:12px;font-size:13px;color:#646973}
+section{padding:72px 0 0}
+h2{font-weight:500;font-size:28px;letter-spacing:-.025em;line-height:1.2;margin-bottom:8px}
+section>.wrap>p.sub{color:var(--mu);max-width:54ch}
+.list{margin-top:28px;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--line);transition:padding-left .25s}
+.row:hover{padding-left:8px}
+.row h3{font-weight:500;font-size:15px;letter-spacing:-.005em}
+.row p{color:#a9adb5;font-size:15px;max-width:60ch}
+.row time{color:var(--mu);font-size:14px;font-variant-numeric:tabular-nums}
+.job{grid-template-columns:1fr auto}
+.job small{display:block;color:var(--mu);font-size:14px;margin-top:2px}
+.end{padding:96px 0 72px}
+.end h2{font-size:clamp(30px,5vw,44px);letter-spacing:-.035em;max-width:16ch;text-wrap:balance}
+footer{border-top:1px solid var(--line);padding:24px 0;color:#646973;font-size:13px}
+@media(max-width:680px){.hero{padding-top:64px}.metrics{grid-template-columns:1fr}.m{border-right:0;border-bottom:1px solid var(--line)}.m:last-child{border-bottom:0}.row{grid-template-columns:1fr;gap:6px}nav div a:not(.btn){display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Alexandre Petien</b><div><a href="#ofrezco">Qué aporto</a><a href="#trayectoria">Trayectoria</a><a class="btn p" href="#contacto" data-wa>WhatsApp</a></div></div></nav>
+
+<main class="wrap">
+<header class="hero">
+<p class="who">Alexandre Petien · Asesor comercial · Chinandega, Nicaragua</p>
+<h1>Cierro cerca de 4 de cada 10 clientes que atiendo.</h1>
+<p class="lead">Hoy vendo equipos tecnológicos con financiamiento y mis propios prospectos. Quiero llevar ese cierre a un nuevo proyecto.</p>
+<div class="cta"><a class="btn p" href="#contacto" data-wa>Escribir por WhatsApp</a><a class="btn" href="Alexandre-Petien-CV.pdf" download>Descargar CV</a></div>
+</header>
+
+<div class="metrics" id="metricas">
+<div class="m"><strong data-to="30" data-pre="~">~30</strong><span>equipos vendidos al mes en promedio</span></div>
+<div class="m"><strong data-to="57">57</strong><span>equipos en mi mejor mes de ventas</span></div>
+<div class="m"><strong data-to="40" data-pre="~" data-suf="%">~40%</strong><span>de los clientes atendidos terminan en venta: unos 40 de cada 100</span></div>
+</div>
+<p class="note">Cifras aproximadas de PhoneAShop. Carta de recomendación disponible a solicitud.</p>
+
+<section id="ofrezco"><div class="wrap" style="padding:0">
+<h2>Lo que llevo a la sala de ventas</h2>
+<p class="sub">Todo sale de mi trabajo diario, no de un curso.</p>
+<div class="list">
+<div class="row"><h3>Cierre con financiamiento</h3><p>Vendo productos de US$100 a US$2,000 y cierro también con financiamiento y pagos a plazos.</p></div>
+<div class="row"><h3>Prospectos propios</h3><p>Genero demanda por tienda, WhatsApp, Facebook, Instagram, TikTok y campañas de Meta Ads que configuro yo.</p></div>
+<div class="row"><h3>Clientes que vuelven</h3><p>Tengo clientes recurrentes y referidos gracias al seguimiento después de la venta.</p></div>
+<div class="row"><h3>Criterio técnico</h3><p>Soy ingeniero en Agroecología Tropical. Participé en la calibración de tractores y pesé vehículos de carga: sé cómo se ajusta una máquina.</p></div>
+<div class="row"><h3>Licencia de conducir</h3><p>Licencia categoría 3 vigente hasta 2031. Manejo transmisión manual y automática.</p></div>
+</div></div></section>
+
+<section id="trayectoria"><div class="wrap" style="padding:0">
+<h2>Trayectoria</h2>
+<div class="list">
+<div class="row job"><div><h3>PhoneAShop</h3><small>Asesor Comercial de Equipos Tecnológicos</small></div><time>Dic. 2023 – hoy</time></div>
+<div class="row job"><div><h3>SER AGRO</h3><small>Ingeniero Pasante de Campo</small></div><time>2023</time></div>
+<div class="row job"><div><h3>COMASA S.A</h3><small>Auxiliar de Báscula y Control Logístico</small></div><time>2018</time></div>
+<div class="row job"><div><h3>UNAN-León</h3><small>Ingeniería en Agroecología Tropical</small></div><time>2017 – 2025</time></div>
+</div></div></section>
+
+<section id="contacto" class="end"><div class="wrap" style="padding:0">
+<h2>¿Tiene una plaza de vendedor abierta?</h2>
+<p class="sub" style="margin-top:12px">Respondo por WhatsApp, llamada o correo. Teléfono: <a href="tel:+50587394875" style="color:var(--tx)">8739 4875</a>.</p>
+<div class="cta"><a class="btn p" href="#" data-wa>Escribir por WhatsApp</a><a class="btn" href="#" data-mail>Enviar correo</a><a class="btn" href="Alexandre-Petien-CV.pdf" download>Descargar CV</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Alexandre Petien · Chinandega, Nicaragua</div></footer>
+
+<script>
+/* EDITA estas dos líneas antes de publicar */
+const WA="50557078115", MAIL="Petienb350@gmail.com";
+const msg=encodeURIComponent("Hola Alexandre, vi tu perfil y quisiera hablar sobre una plaza de vendedor.");
+document.querySelectorAll("[data-wa]").forEach(a=>{a.href="https://wa.me/"+WA+"?text="+msg;a.target="_blank";a.rel="noopener"});
+document.querySelectorAll("[data-mail]").forEach(a=>a.href="mailto:"+MAIL+"?subject=Plaza%20de%20vendedor");
+
+/* Un solo momento animado: los números cuentan hasta su valor al entrar en pantalla */
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const nums=document.querySelectorAll("[data-to]");
+function count(el){
+  const to=+el.dataset.to,pre=el.dataset.pre||"",suf=el.dataset.suf||"",t0=performance.now(),D=1300;
+  (function f(t){const p=Math.min((t-t0)/D,1),e=1-Math.pow(1-p,4);
+    el.textContent=pre+Math.round(to*e)+suf;if(p<1)requestAnimationFrame(f)})(t0);
+}
+if(!reduce&&"IntersectionObserver" in window){
+  nums.forEach(n=>n.textContent=(n.dataset.pre||"")+"0"+(n.dataset.suf||""));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){count(e.target);io.unobserve(e.target)}}),{threshold:.6});
+  nums.forEach(n=>io.observe(n));
+}
+/* Brillo suave que sigue al cursor en cada métrica */
+document.querySelectorAll(".m").forEach(m=>m.addEventListener("pointermove",e=>{
+  const r=m.getBoundingClientRect();m.style.setProperty("--x",e.clientX-r.left+"px");m.style.setProperty("--y",e.clientY-r.top+"px")}));
+</script>
+</body>
+</html>
